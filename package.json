@@ -2,10 +2,10 @@
   "name": "goit-js-hw-08",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Dmitriy-Tyukh/goit-js-hw-08",
+  "homepage": "https://Dmitriy-Tyukh.github.io/goit-js-hw-08e",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /github.com/Dmitriy-Tyukh/goit-js-hw-08"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
