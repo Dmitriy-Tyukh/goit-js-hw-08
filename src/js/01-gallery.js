@@ -1,5 +1,5 @@
 // Add imports above this line
-import { galleryItems } from './gallery-items';
+import galleryItems from './gallery-items.json';
 // Change code below this line
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
@@ -15,6 +15,7 @@ let imageLightBox = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionsData: 'alt',
   captionDelay: 250,
+    captionClass: 'bgColor',
 });
 
 function galleryItemsMarkup(gallery) {
