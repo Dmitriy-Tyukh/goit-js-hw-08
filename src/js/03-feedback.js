@@ -78,12 +78,17 @@ function onFormSubmit(e) {
 }
     
 if (localStorage.getItem(STORAGE_KEY)) {
-    formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    
+    try {
+        formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+
         for (const key in formData) {
-            refs.form.elements[key].value = formData[key];
+          refs.form.elements[key].value = formData[key];
         }
+    } catch (err) {
+        console.log('Parse error');
+    }
 }
+
 // console.log(refs.form.elements);
 // refs.form.elements[name];
 
